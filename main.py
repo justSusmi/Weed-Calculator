@@ -62,8 +62,8 @@ def gram_calculator():
     gram_amount = int(input("Total amount(g): "))
 
     for x in range(5,21):
-      calculation = (((purchase_price/gram_amount)-x)*gram_amount)
-      profit = (calculation-calculation*2)-purchase_price
+      calculation = (((purchase_price/gram_amount)-x)*-1)
+      profit = calculation*gram_amount
 
       if profit < 0:
             profit_or_loose = "Loss"
